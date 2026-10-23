@@ -11,7 +11,7 @@
 ## 数据怎么来
 
 - `board-config.json` 里的 `deployments` 指向源码仓库，采集时按它读取 PR、Issue 和 workflow 运行。
-- 定时任务每天 02:17（Asia/Shanghai）跑一次；也可以在 Actions 里手动触发 **Collect dashboard data (PAT)**。
+- 定时任务每天 10:17（Asia/Shanghai，UTC 02:17）跑一次；也可以在 Actions 里手动触发 **Collect dashboard data (PAT)**。
 - 采集结果写回 `site/`，再由 **Deploy dashboard Pages** 发布到上面的站点。
 - 门禁报告来自源码仓库的 `CI` workflow（`scripts/gate/gate.mjs`），以及 build / nightly / e2e / release 各 lane。
 
